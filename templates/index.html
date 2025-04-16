@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Каталог книг — LitHub{% endblock %}
+
+{% block content %}
+  {% for book in books %}
+    <div class="card mb-3 shadow-sm" style="max-width: 800px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="{{ book.img_src | urlencode }}" class="card-img" alt="Обложка книги {{ book.title }}">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{{ book.title }}</h5>
+            <p class="card-text">
+              <small class="text-muted">Автор: {{ book.author }}</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+{% endblock %}
