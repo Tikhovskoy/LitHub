@@ -26,5 +26,6 @@ on_reload()
 
 server = Server()
 server.watch('templates/*.html', on_reload)
+server.watch('static/styles.css', on_reload)
 server.watch('meta_data.json', on_reload)
 server.serve(root='.')
