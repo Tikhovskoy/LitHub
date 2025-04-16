@@ -1,9 +1,33 @@
-.book-cover {
-    width: 100px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 4px;
-    display: block;
-    margin: 0 auto;
-  }
-  
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.badge {
+    margin-right: 4px;
+    margin-bottom: 4px;
+    font-size: 0.8em;
+}
+
+.card-text {
+    font-size: 0.9em;
+    color: #333;
+}
+
+.sticky-pagination {
+    position: sticky; 
+    top: 0;                
+    z-index: 1050;
+    background: transparent; 
+    padding: 8px 0;       
+    margin-bottom: 1rem;  
+}
+
+.card-img-stretch {
+  width: 100px;   
+  height: auto;   
+  max-height: 100%;  
+  object-fit: contain;
+}
