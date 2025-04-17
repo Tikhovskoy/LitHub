@@ -15,10 +15,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.8'
@@ -31,13 +31,7 @@ jobs:
       - name: Generate website
         run: python render_website.py
 
-      - name: Upload dummy artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: dummy
-          path: pages/index.html
-
-      - name: Upload Pages artifact
+      - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
           path: pages
