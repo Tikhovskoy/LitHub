@@ -2,14 +2,17 @@ venv/
 .venv/
 
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
+*.py[cod]
+*$py.class
+
+.idea/
+.vscode/
 
 books/
 meta_data.json
 
-*.log
-*.tmp
 .DS_Store
 Thumbs.db
+
+*.log
+*.tmp
