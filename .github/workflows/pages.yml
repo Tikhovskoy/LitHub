@@ -28,11 +28,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: 🛠 Generate website
+      - name: Generate website
         run: python render_website.py
 
-      - name:  Dummy artifact (чтобы подгрузить upload-artifact)
-        uses: actions/upload-artifact@v3
+      - name: Upload dummy artifact
+        uses: actions/upload-artifact@v2
         with:
           name: dummy
           path: pages/index.html
