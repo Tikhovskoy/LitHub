@@ -1,27 +1,26 @@
+
 <!doctype html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Каталог книг — LitHub</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
     <link rel="stylesheet" href="/static/styles.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <div class="container-fluid mt-4">
-      <!-- Центрированный заголовок с jumbotron-стилем -->
       <header class="jumbotron text-center bg-light py-4">
         <h1 class="display-4">LitHub — Онлайн библиотека</h1>
       </header>
       
-      
 <div class="container">
-  <!-- Пагинация, оформленная минималистично и закреплённая с помощью sticky -->
-  <nav class="sticky-pagination">
+  <nav class="sticky-pagination mt-4 mb-4">
     <ul class="pagination justify-content-center mb-0">
       
         <li class="page-item">
-          <a class="page-link" href="index5.html" aria-label="Предыдущая страница">← Назад</a>
+          <a class="page-link" href="index5.html">← Назад</a>
         </li>
       
       
@@ -67,28 +66,26 @@
       
       
         <li class="page-item">
-          <a class="page-link" href="index7.html" aria-label="Следующая страница">Вперёд →</a>
+          <a class="page-link" href="index7.html">Вперёд →</a>
         </li>
       
     </ul>
   </nav>
 
-  <!-- Сетка карточек книг -->
-  <div class="row gx-4 justify-content-center">
+  <div class="row">
     
-      <div class="col-md-6 col-lg-6 mb-4">
-        <div class="card shadow-sm h-100">
+      <div class="col-12 col-sm-6 mb-4">
+        <div class="card h-100 shadow-sm">
           <div class="row no-gutters h-100">
-            <!-- Колонка с изображением с фиксированной шириной, высота определяется автоматически -->
-            <div class="col-auto h-100">
-              <img src="/img/nopic.gif"
-                   class="img-fluid rounded card-img-stretch"
-                   alt="Обложка книги А, Критика!">
+            <div class="col-auto h-100" style="width:140px;">
+              <img 
+                src="/img/nopic.gif" 
+                class="img-fluid h-100" 
+                style="object-fit: cover;" 
+                alt="Обложка А, Критика!">
             </div>
-            <!-- Колонка с содержимым карточки -->
-            <div class="col">
-              <!-- Контейнер содержимого с flex-раскладкой и минимальной высотой -->
-              <div class="card-body d-flex flex-column h-100" style="min-height: 190px;">
+            <div class="col d-flex flex-column h-100">
+              <div class="card-body d-flex flex-column flex-grow-1">
                 <h5 class="card-title">А, Критика!</h5>
                 <p class="card-text"><strong>Еськов Кирилл</strong></p>
                 
@@ -98,7 +95,10 @@
                     
                   </div>
                 
-                <a href="/books/18946-%D0%90%2C%20%D0%9A%D1%80%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%21.txt" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">
+                <a 
+                  href="/books_html/18946-%D0%90%2C%20%D0%9A%D1%80%D0%B8%D1%82%D0%B8%D0%BA%D0%B0%21.html" 
+                  class="btn btn-outline-primary mt-auto"
+                  target="_blank" rel="noopener noreferrer">
                   Читать
                 </a>
               </div>
@@ -107,19 +107,18 @@
         </div>
       </div>
     
-      <div class="col-md-6 col-lg-6 mb-4">
-        <div class="card shadow-sm h-100">
+      <div class="col-12 col-sm-6 mb-4">
+        <div class="card h-100 shadow-sm">
           <div class="row no-gutters h-100">
-            <!-- Колонка с изображением с фиксированной шириной, высота определяется автоматически -->
-            <div class="col-auto h-100">
-              <img src="/img/nopic.gif"
-                   class="img-fluid rounded card-img-stretch"
-                   alt="Обложка книги А как же еще">
+            <div class="col-auto h-100" style="width:140px;">
+              <img 
+                src="/img/nopic.gif" 
+                class="img-fluid h-100" 
+                style="object-fit: cover;" 
+                alt="Обложка А как же еще">
             </div>
-            <!-- Колонка с содержимым карточки -->
-            <div class="col">
-              <!-- Контейнер содержимого с flex-раскладкой и минимальной высотой -->
-              <div class="card-body d-flex flex-column h-100" style="min-height: 190px;">
+            <div class="col d-flex flex-column h-100">
+              <div class="card-body d-flex flex-column flex-grow-1">
                 <h5 class="card-title">А как же еще</h5>
                 <p class="card-text"><strong>Каттнер Генри</strong></p>
                 
@@ -129,7 +128,10 @@
                     
                   </div>
                 
-                <a href="/books/18963-%D0%90%20%D0%BA%D0%B0%D0%BA%20%D0%B6%D0%B5%20%D0%B5%D1%89%D0%B5.txt" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">
+                <a 
+                  href="/books_html/18963-%D0%90%20%D0%BA%D0%B0%D0%BA%20%D0%B6%D0%B5%20%D0%B5%D1%89%D0%B5.html" 
+                  class="btn btn-outline-primary mt-auto"
+                  target="_blank" rel="noopener noreferrer">
                   Читать
                 </a>
               </div>
@@ -138,19 +140,18 @@
         </div>
       </div>
     
-      <div class="col-md-6 col-lg-6 mb-4">
-        <div class="card shadow-sm h-100">
+      <div class="col-12 col-sm-6 mb-4">
+        <div class="card h-100 shadow-sm">
           <div class="row no-gutters h-100">
-            <!-- Колонка с изображением с фиксированной шириной, высота определяется автоматически -->
-            <div class="col-auto h-100">
-              <img src="/img/nopic.gif"
-                   class="img-fluid rounded card-img-stretch"
-                   alt="Обложка книги А человек забудет">
+            <div class="col-auto h-100" style="width:140px;">
+              <img 
+                src="/img/nopic.gif" 
+                class="img-fluid h-100" 
+                style="object-fit: cover;" 
+                alt="Обложка А человек забудет">
             </div>
-            <!-- Колонка с содержимым карточки -->
-            <div class="col">
-              <!-- Контейнер содержимого с flex-раскладкой и минимальной высотой -->
-              <div class="card-body d-flex flex-column h-100" style="min-height: 190px;">
+            <div class="col d-flex flex-column h-100">
+              <div class="card-body d-flex flex-column flex-grow-1">
                 <h5 class="card-title">А человек забудет</h5>
                 <p class="card-text"><strong>Трусов Сергей</strong></p>
                 
@@ -160,7 +161,10 @@
                     
                   </div>
                 
-                <a href="/books/18954-%D0%90%20%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%20%D0%B7%D0%B0%D0%B1%D1%83%D0%B4%D0%B5%D1%82.txt" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">
+                <a 
+                  href="/books_html/18954-%D0%90%20%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%20%D0%B7%D0%B0%D0%B1%D1%83%D0%B4%D0%B5%D1%82.html" 
+                  class="btn btn-outline-primary mt-auto"
+                  target="_blank" rel="noopener noreferrer">
                   Читать
                 </a>
               </div>
@@ -169,19 +173,18 @@
         </div>
       </div>
     
-      <div class="col-md-6 col-lg-6 mb-4">
-        <div class="card shadow-sm h-100">
+      <div class="col-12 col-sm-6 mb-4">
+        <div class="card h-100 shadow-sm">
           <div class="row no-gutters h-100">
-            <!-- Колонка с изображением с фиксированной шириной, высота определяется автоматически -->
-            <div class="col-auto h-100">
-              <img src="/img/nopic.gif"
-                   class="img-fluid rounded card-img-stretch"
-                   alt="Обложка книги А я пойду дальше">
+            <div class="col-auto h-100" style="width:140px;">
+              <img 
+                src="/img/nopic.gif" 
+                class="img-fluid h-100" 
+                style="object-fit: cover;" 
+                alt="Обложка А я пойду дальше">
             </div>
-            <!-- Колонка с содержимым карточки -->
-            <div class="col">
-              <!-- Контейнер содержимого с flex-раскладкой и минимальной высотой -->
-              <div class="card-body d-flex flex-column h-100" style="min-height: 190px;">
+            <div class="col d-flex flex-column h-100">
+              <div class="card-body d-flex flex-column flex-grow-1">
                 <h5 class="card-title">А я пойду дальше</h5>
                 <p class="card-text"><strong>Лейбер Фриц</strong></p>
                 
@@ -191,7 +194,10 @@
                     
                   </div>
                 
-                <a href="/books/18962-%D0%90%20%D1%8F%20%D0%BF%D0%BE%D0%B9%D0%B4%D1%83%20%D0%B4%D0%B0%D0%BB%D1%8C%D1%88%D0%B5.txt" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">
+                <a 
+                  href="/books_html/18962-%D0%90%20%D1%8F%20%D0%BF%D0%BE%D0%B9%D0%B4%D1%83%20%D0%B4%D0%B0%D0%BB%D1%8C%D1%88%D0%B5.html" 
+                  class="btn btn-outline-primary mt-auto"
+                  target="_blank" rel="noopener noreferrer">
                   Читать
                 </a>
               </div>
@@ -200,19 +206,18 @@
         </div>
       </div>
     
-      <div class="col-md-6 col-lg-6 mb-4">
-        <div class="card shadow-sm h-100">
+      <div class="col-12 col-sm-6 mb-4">
+        <div class="card h-100 shadow-sm">
           <div class="row no-gutters h-100">
-            <!-- Колонка с изображением с фиксированной шириной, высота определяется автоматически -->
-            <div class="col-auto h-100">
-              <img src="/img/nopic.gif"
-                   class="img-fluid rounded card-img-stretch"
-                   alt="Обложка книги 9-я книга. Тарат Зурбин">
+            <div class="col-auto h-100" style="width:140px;">
+              <img 
+                src="/img/nopic.gif" 
+                class="img-fluid h-100" 
+                style="object-fit: cover;" 
+                alt="Обложка 9-я книга. Тарат Зурбин">
             </div>
-            <!-- Колонка с содержимым карточки -->
-            <div class="col">
-              <!-- Контейнер содержимого с flex-раскладкой и минимальной высотой -->
-              <div class="card-body d-flex flex-column h-100" style="min-height: 190px;">
+            <div class="col d-flex flex-column h-100">
+              <div class="card-body d-flex flex-column flex-grow-1">
                 <h5 class="card-title">9-я книга. Тарат Зурбин</h5>
                 <p class="card-text"><strong>Карр Алекс</strong></p>
                 
@@ -222,7 +227,10 @@
                     
                   </div>
                 
-                <a href="/books/18943-9-%D1%8F%20%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0.%20%D0%A2%D0%B0%D1%80%D0%B0%D1%82%20%D0%97%D1%83%D1%80%D0%B1%D0%B8%D0%BD.txt" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">
+                <a 
+                  href="/books_html/18943-9-%D1%8F%20%D0%BA%D0%BD%D0%B8%D0%B3%D0%B0.%20%D0%A2%D0%B0%D1%80%D0%B0%D1%82%20%D0%97%D1%83%D1%80%D0%B1%D0%B8%D0%BD.html" 
+                  class="btn btn-outline-primary mt-auto"
+                  target="_blank" rel="noopener noreferrer">
                   Читать
                 </a>
               </div>
@@ -231,19 +239,18 @@
         </div>
       </div>
     
-      <div class="col-md-6 col-lg-6 mb-4">
-        <div class="card shadow-sm h-100">
+      <div class="col-12 col-sm-6 mb-4">
+        <div class="card h-100 shadow-sm">
           <div class="row no-gutters h-100">
-            <!-- Колонка с изображением с фиксированной шириной, высота определяется автоматически -->
-            <div class="col-auto h-100">
-              <img src="/img/nopic.gif"
-                   class="img-fluid rounded card-img-stretch"
-                   alt="Обложка книги А еще мы выгуливаем собак">
+            <div class="col-auto h-100" style="width:140px;">
+              <img 
+                src="/img/nopic.gif" 
+                class="img-fluid h-100" 
+                style="object-fit: cover;" 
+                alt="Обложка А еще мы выгуливаем собак">
             </div>
-            <!-- Колонка с содержимым карточки -->
-            <div class="col">
-              <!-- Контейнер содержимого с flex-раскладкой и минимальной высотой -->
-              <div class="card-body d-flex flex-column h-100" style="min-height: 190px;">
+            <div class="col d-flex flex-column h-100">
+              <div class="card-body d-flex flex-column flex-grow-1">
                 <h5 class="card-title">А еще мы выгуливаем собак</h5>
                 <p class="card-text"><strong>Хайнлайн Роберт</strong></p>
                 
@@ -253,7 +260,10 @@
                     
                   </div>
                 
-                <a href="/books/18959-%D0%90%20%D0%B5%D1%89%D0%B5%20%D0%BC%D1%8B%20%D0%B2%D1%8B%D0%B3%D1%83%D0%BB%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA.txt" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">
+                <a 
+                  href="/books_html/18959-%D0%90%20%D0%B5%D1%89%D0%B5%20%D0%BC%D1%8B%20%D0%B2%D1%8B%D0%B3%D1%83%D0%BB%D0%B8%D0%B2%D0%B0%D0%B5%D0%BC%20%D1%81%D0%BE%D0%B1%D0%B0%D0%BA.html" 
+                  class="btn btn-outline-primary mt-auto"
+                  target="_blank" rel="noopener noreferrer">
                   Читать
                 </a>
               </div>
@@ -262,19 +272,18 @@
         </div>
       </div>
     
-      <div class="col-md-6 col-lg-6 mb-4">
-        <div class="card shadow-sm h-100">
+      <div class="col-12 col-sm-6 mb-4">
+        <div class="card h-100 shadow-sm">
           <div class="row no-gutters h-100">
-            <!-- Колонка с изображением с фиксированной шириной, высота определяется автоматически -->
-            <div class="col-auto h-100">
-              <img src="/img/nopic.gif"
-                   class="img-fluid rounded card-img-stretch"
-                   alt="Обложка книги 995-й святой">
+            <div class="col-auto h-100" style="width:140px;">
+              <img 
+                src="/img/nopic.gif" 
+                class="img-fluid h-100" 
+                style="object-fit: cover;" 
+                alt="Обложка 995-й святой">
             </div>
-            <!-- Колонка с содержимым карточки -->
-            <div class="col">
-              <!-- Контейнер содержимого с flex-раскладкой и минимальной высотой -->
-              <div class="card-body d-flex flex-column h-100" style="min-height: 190px;">
+            <div class="col d-flex flex-column h-100">
+              <div class="card-body d-flex flex-column flex-grow-1">
                 <h5 class="card-title">995-й святой</h5>
                 <p class="card-text"><strong>Цветков Юрий</strong></p>
                 
@@ -284,7 +293,10 @@
                     
                   </div>
                 
-                <a href="/books/18945-995-%D0%B9%20%D1%81%D0%B2%D1%8F%D1%82%D0%BE%D0%B9.txt" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">
+                <a 
+                  href="/books_html/18945-995-%D0%B9%20%D1%81%D0%B2%D1%8F%D1%82%D0%BE%D0%B9.html" 
+                  class="btn btn-outline-primary mt-auto"
+                  target="_blank" rel="noopener noreferrer">
                   Читать
                 </a>
               </div>
@@ -293,19 +305,18 @@
         </div>
       </div>
     
-      <div class="col-md-6 col-lg-6 mb-4">
-        <div class="card shadow-sm h-100">
+      <div class="col-12 col-sm-6 mb-4">
+        <div class="card h-100 shadow-sm">
           <div class="row no-gutters h-100">
-            <!-- Колонка с изображением с фиксированной шириной, высота определяется автоматически -->
-            <div class="col-auto h-100">
-              <img src="/img/nopic.gif"
-                   class="img-fluid rounded card-img-stretch"
-                   alt="Обложка книги А роза упала на лапу Азора">
+            <div class="col-auto h-100" style="width:140px;">
+              <img 
+                src="/img/nopic.gif" 
+                class="img-fluid h-100" 
+                style="object-fit: cover;" 
+                alt="Обложка А роза упала на лапу Азора">
             </div>
-            <!-- Колонка с содержимым карточки -->
-            <div class="col">
-              <!-- Контейнер содержимого с flex-раскладкой и минимальной высотой -->
-              <div class="card-body d-flex flex-column h-100" style="min-height: 190px;">
+            <div class="col d-flex flex-column h-100">
+              <div class="card-body d-flex flex-column flex-grow-1">
                 <h5 class="card-title">А роза упала на лапу Азора</h5>
                 <p class="card-text"><strong>Осинский Владимир</strong></p>
                 
@@ -315,7 +326,10 @@
                     
                   </div>
                 
-                <a href="/books/18971-%D0%90%20%D1%80%D0%BE%D0%B7%D0%B0%20%D1%83%D0%BF%D0%B0%D0%BB%D0%B0%20%D0%BD%D0%B0%20%D0%BB%D0%B0%D0%BF%D1%83%20%D0%90%D0%B7%D0%BE%D1%80%D0%B0.txt" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">
+                <a 
+                  href="/books_html/18971-%D0%90%20%D1%80%D0%BE%D0%B7%D0%B0%20%D1%83%D0%BF%D0%B0%D0%BB%D0%B0%20%D0%BD%D0%B0%20%D0%BB%D0%B0%D0%BF%D1%83%20%D0%90%D0%B7%D0%BE%D1%80%D0%B0.html" 
+                  class="btn btn-outline-primary mt-auto"
+                  target="_blank" rel="noopener noreferrer">
                   Читать
                 </a>
               </div>
@@ -324,19 +338,18 @@
         </div>
       </div>
     
-      <div class="col-md-6 col-lg-6 mb-4">
-        <div class="card shadow-sm h-100">
+      <div class="col-12 col-sm-6 mb-4">
+        <div class="card h-100 shadow-sm">
           <div class="row no-gutters h-100">
-            <!-- Колонка с изображением с фиксированной шириной, высота определяется автоматически -->
-            <div class="col-auto h-100">
-              <img src="/img/nopic.gif"
-                   class="img-fluid rounded card-img-stretch"
-                   alt="Обложка книги А поезд идет">
+            <div class="col-auto h-100" style="width:140px;">
+              <img 
+                src="/img/nopic.gif" 
+                class="img-fluid h-100" 
+                style="object-fit: cover;" 
+                alt="Обложка А поезд идет">
             </div>
-            <!-- Колонка с содержимым карточки -->
-            <div class="col">
-              <!-- Контейнер содержимого с flex-раскладкой и минимальной высотой -->
-              <div class="card-body d-flex flex-column h-100" style="min-height: 190px;">
+            <div class="col d-flex flex-column h-100">
+              <div class="card-body d-flex flex-column flex-grow-1">
                 <h5 class="card-title">А поезд идет</h5>
                 <p class="card-text"><strong>Ашкинази Леонид</strong></p>
                 
@@ -346,7 +359,10 @@
                     
                   </div>
                 
-                <a href="/books/18970-%D0%90%20%D0%BF%D0%BE%D0%B5%D0%B7%D0%B4%20%D0%B8%D0%B4%D0%B5%D1%82.txt" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">
+                <a 
+                  href="/books_html/18970-%D0%90%20%D0%BF%D0%BE%D0%B5%D0%B7%D0%B4%20%D0%B8%D0%B4%D0%B5%D1%82.html" 
+                  class="btn btn-outline-primary mt-auto"
+                  target="_blank" rel="noopener noreferrer">
                   Читать
                 </a>
               </div>
@@ -355,19 +371,18 @@
         </div>
       </div>
     
-      <div class="col-md-6 col-lg-6 mb-4">
-        <div class="card shadow-sm h-100">
+      <div class="col-12 col-sm-6 mb-4">
+        <div class="card h-100 shadow-sm">
           <div class="row no-gutters h-100">
-            <!-- Колонка с изображением с фиксированной шириной, высота определяется автоматически -->
-            <div class="col-auto h-100">
-              <img src="/img/nopic.gif"
-                   class="img-fluid rounded card-img-stretch"
-                   alt="Обложка книги А и Е">
+            <div class="col-auto h-100" style="width:140px;">
+              <img 
+                src="/img/nopic.gif" 
+                class="img-fluid h-100" 
+                style="object-fit: cover;" 
+                alt="Обложка А и Е">
             </div>
-            <!-- Колонка с содержимым карточки -->
-            <div class="col">
-              <!-- Контейнер содержимого с flex-раскладкой и минимальной высотой -->
-              <div class="card-body d-flex flex-column h-100" style="min-height: 190px;">
+            <div class="col d-flex flex-column h-100">
+              <div class="card-body d-flex flex-column flex-grow-1">
                 <h5 class="card-title">А и Е</h5>
                 <p class="card-text"><strong>Стульник Сергей</strong></p>
                 
@@ -377,7 +392,10 @@
                     
                   </div>
                 
-                <a href="/books/18961-%D0%90%20%D0%B8%20%D0%95.txt" target="_blank" class="btn btn-outline-primary btn-sm mt-auto">
+                <a 
+                  href="/books_html/18961-%D0%90%20%D0%B8%20%D0%95.html" 
+                  class="btn btn-outline-primary mt-auto"
+                  target="_blank" rel="noopener noreferrer">
                   Читать
                 </a>
               </div>
@@ -387,8 +405,66 @@
       </div>
     
   </div>
+
+  <nav class="sticky-pagination mt-4 mb-4">
+    <ul class="pagination justify-content-center mb-0">
+      
+        <li class="page-item">
+          <a class="page-link" href="index5.html">← Назад</a>
+        </li>
+      
+      
+        <li class="page-item ">
+          <a class="page-link" href="index1.html">1</a>
+        </li>
+      
+        <li class="page-item ">
+          <a class="page-link" href="index2.html">2</a>
+        </li>
+      
+        <li class="page-item ">
+          <a class="page-link" href="index3.html">3</a>
+        </li>
+      
+        <li class="page-item ">
+          <a class="page-link" href="index4.html">4</a>
+        </li>
+      
+        <li class="page-item ">
+          <a class="page-link" href="index5.html">5</a>
+        </li>
+      
+        <li class="page-item active">
+          <a class="page-link" href="index6.html">6</a>
+        </li>
+      
+        <li class="page-item ">
+          <a class="page-link" href="index7.html">7</a>
+        </li>
+      
+        <li class="page-item ">
+          <a class="page-link" href="index8.html">8</a>
+        </li>
+      
+        <li class="page-item ">
+          <a class="page-link" href="index9.html">9</a>
+        </li>
+      
+        <li class="page-item ">
+          <a class="page-link" href="index10.html">10</a>
+        </li>
+      
+      
+        <li class="page-item">
+          <a class="page-link" href="index7.html">Вперёд →</a>
+        </li>
+      
+    </ul>
+  </nav>
 </div>
 
     </div>
+    <script src="/static/jquery.min.js"></script>
+    <script src="/static/bootstrap.bundle.min.js"></script>
   </body>
 </html>

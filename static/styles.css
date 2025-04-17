@@ -1,3 +1,5 @@
+/* styles.css */
+
 .card-title {
     font-size: 1.1rem;
     font-weight: 600;
@@ -5,29 +7,44 @@
     margin-bottom: 0.5rem;
 }
 
-.badge {
-    margin-right: 4px;
-    margin-bottom: 4px;
-    font-size: 0.8em;
+.card-text {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 0.5rem;
 }
 
-.card-text {
-    font-size: 0.9em;
-    color: #333;
+.badge {
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-size: 0.75rem;
+}
+
+.card .col-auto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+.card-body .btn {
+    margin-top: auto;
 }
 
 .sticky-pagination {
-    position: sticky; 
-    top: 0;                
+    position: sticky;
+    top: 0;
     z-index: 1050;
-    background: transparent; 
-    padding: 8px 0;       
-    margin-bottom: 1rem;  
+    background-color: #fff;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
 }
 
-.card-img-stretch {
-  width: 100px;   
-  height: auto;   
-  max-height: 100%;  
-  object-fit: contain;
+.container-fluid, .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
