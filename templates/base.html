@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% block title %}LitHub — Онлайн библиотека{% endblock %}</title>
-    <link rel="stylesheet" href="/static/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/styles.css">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{ base_url }}static/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ base_url }}static/styles.css">
+    <link rel="icon" href="{{ base_url }}favicon.ico" type="image/x-icon">
   </head>
   <body>
     <div class="container-fluid mt-4">
@@ -15,7 +15,7 @@
       </header>
       {% block content %}{% endblock %}
     </div>
-    <script src="/static/jquery.min.js"></script>
-    <script src="/static/bootstrap.bundle.min.js"></script>
+    <script src="{{ base_url }}static/jquery.min.js"></script>
+    <script src="{{ base_url }}static/bootstrap.bundle.min.js"></script>
   </body>
 </html>
