@@ -31,6 +31,12 @@ jobs:
       - name: 🛠 Generate website
         run: python render_website.py
 
+      - name:  Dummy artifact (чтобы подгрузить upload-artifact)
+        uses: actions/upload-artifact@v3
+        with:
+          name: dummy
+          path: pages/index.html
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v2
         with:
