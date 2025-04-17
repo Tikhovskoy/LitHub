@@ -21,7 +21,7 @@ https://tikhovskoy.github.io/LitHub/
 
 Скриншот сайта:
 
-![Скриншот сайта](docs/screenshot.png)
+![Скриншот сайта](screenshot/screenshot.png)
 
 ## Как собрать сайт вручную
 
