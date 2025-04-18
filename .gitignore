@@ -8,9 +8,6 @@ __pycache__/
 .idea/
 .vscode/
 
-books/
-meta_data.json
-
 .DS_Store
 Thumbs.db
 
