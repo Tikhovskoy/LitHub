@@ -1,3 +1,4 @@
+
 import os
 import json
 import shutil
@@ -26,7 +27,8 @@ def build_site(output_dir='docs'):
 
     os.makedirs(output_dir, exist_ok=True)
 
-    for folder in ('static', 'img'):
+    folders_to_copy = ['static', 'media/img']
+    for folder in folders_to_copy:
         if os.path.exists(folder):
             dest = os.path.join(output_dir, folder)
             if os.path.exists(dest):

@@ -12,5 +12,6 @@ if __name__ == '__main__':
     server.watch('render_website.py',   build)
     server.watch('meta_data.json',      build)
     server.watch('static/**/*.*',       build)
-    server.watch('img/**/*.*',          build)
+    server.watch('media/img/**/*.*',    build)
+    server.watch('media/books/**/*.*',  build)
     server.serve(root='docs', host='127.0.0.1', port=5500)
