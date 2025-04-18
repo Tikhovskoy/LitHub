@@ -61,18 +61,27 @@ python serve.py
 
 #### 2.2.3. Структура репозитория
 ```
-.
-├── meta_data.json      # JSON‑описание книг (семантические поля)
-├── render_website.py   # Генератор статического сайта в docs/
-├── serve.py            # Сервер разработки с livereload
-├── templates/          # Шаблоны Jinja2: index.html, book.html
-├── static/             # Исходные CSS и JS, favicon
-├── img/                # Оригинальные обложки книг
-└── docs/               # Сгенерированный сайт
-    ├── index.html      # Первая страница каталога
-    ├── indexN.html     # Последующие страницы каталога
-    ├── books_html/     # HTML‑версии отдельных книг
-    └── static/, img/   # Ресурсы для развертывания
+LitHub/
+├── docs/                  # Готовый к публикации сайт
+│   ├── index.html         # Главная страница каталога
+│   ├── index*.html        # Остальные страницы
+│   ├── books_html/        # HTML-страницы отдельных книг
+│   ├── media/img/         # Обложки книг
+│   └── static/            # Стили, скрипты, favicon
+│
+├── media/                 # Исходные данные
+│   ├── books/             # Тексты книг
+│   ├── img/               # Обложки книг
+│   └── screenshot/        # Скриншоты проекта
+│
+├── static/                # Исходные стили, скрипты, favicon
+├── templates/             # Шаблоны Jinja2: index.html, book.html
+├── meta_data.json         # Метаданные книг
+├── render_website.py      # Генератор HTML-страниц
+├── serve.py               # Локальный сервер с livereload
+├── requirements.txt       # Зависимости проекта
+├── README.md              # Документация
+└── .gitignore             # Исключения для git
 ```
 
 #### 2.2.4. Расширение функциональности
