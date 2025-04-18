@@ -1,13 +1,13 @@
-
 import os
 import json
 import shutil
+import argparse
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from more_itertools import chunked
 
-def build_site(output_dir='docs'):
-    with open('meta_data.json', encoding='utf-8') as f:
+def build_site(data_path, output_dir='docs'):
+    with open(data_path, encoding='utf-8') as f:
         books = json.load(f)
 
     for book in books:
@@ -66,5 +66,15 @@ def build_site(output_dir='docs'):
         with open(out_path, 'w', encoding='utf-8') as wf:
             wf.write(rendered)
 
+def main():
+    parser = argparse.ArgumentParser(description='Генерация сайта библиотеки.')
+    parser.add_argument(
+        '--data',
+        default=os.getenv('BOOKS_JSON', 'meta_data.json'),
+        help='Путь к JSON с данными о книгах (по умолчанию: meta_data.json или переменная окружения BOOKS_JSON)'
+    )
+    args = parser.parse_args()
+    build_site(data_path=args.data)
+
 if __name__ == '__main__':
-    build_site()
+    main()

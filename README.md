@@ -88,3 +88,41 @@ LitHub/
 
 1. **Добавление новой книги**: помещаете текстовый файл в директорию (например, `books/`), вносите запись в `meta_data.json` с полями `title`, `author`, `genres`, `book_path`, `img_src`.  
 2. **Запуск генерации**: `python render_website.py`.  
+
+## 3 Конфигурация пути к данным
+
+По умолчанию сайт генерируется на основе файла `meta_data.json`, находящегося в корне проекта. Но вы можете использовать **свои данные**, указав путь одним из следующих способов:
+
+### 1. Через аргумент командной строки
+
+```bash
+python render_website.py --data путь/к/файлу.json
+```
+
+Пример:
+
+```bash
+python render_website.py --data test_data/scifi_books.json
+```
+
+---
+
+### 2. Через переменную окружения `BOOKS_JSON`
+
+```bash
+export BOOKS_JSON=путь/к/файлу.json
+python render_website.py
+```
+
+На Windows:
+
+```powershell
+$env:BOOKS_JSON = "test_data/scifi_books.json"
+python render_website.py
+```
+
+---
+
+### Приоритет
+
+Если указать **и переменную окружения**, и `--data`, то приоритет будет у **аргумента командной строки**.
