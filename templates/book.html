@@ -3,9 +3,9 @@
 {% block title %}{{ book.title }} — LitHub{% endblock %}
 
 {% block content %}
-<div class="container mt-4">
-  <h1>{{ book.title }}</h1>
-  <p><em>{{ book.author }}</em></p>
-  <pre style="white-space: pre-wrap; word-break: break-word;">{{ book.text }}</pre>
-</div>
+  <div class="container mt-4">
+    <h1>{{ book.title }}</h1>
+    <p><em>{{ book.author }}</em></p>
+    <pre style="white-space: pre-wrap; word-break: break-word;">{{ book.text }}</pre>
+  </div>
 {% endblock %}
