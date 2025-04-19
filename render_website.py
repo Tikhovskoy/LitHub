@@ -5,6 +5,7 @@ import argparse
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from more_itertools import chunked
+from urllib.parse import quote
 
 
 def build_site(data_path, output_dir='docs'):
@@ -13,8 +14,12 @@ def build_site(data_path, output_dir='docs'):
 
     for book in books:
         txt_path = Path(book['book_path'])
-        html_name = txt_path.with_suffix('.html').name
+        html_name = quote(txt_path.with_suffix('.html').name)
         book['book_html_path'] = f'books_html/{html_name}'
+
+        img_path = Path(book['img_src'])
+        img_name = quote(img_path.name)
+        book['img_src'] = f'media/img/{img_name}'
 
     books_per_page = 10
     pages = list(chunked(books, books_per_page))
