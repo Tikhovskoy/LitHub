@@ -13,7 +13,7 @@ def build_site(data_path, output_dir='docs'):
     for book in books:
         txt_path = Path(book['book_path'])
         html_name = txt_path.with_suffix('.html').name
-        book['book_html_path'] = f"books_html/{html_name}"
+        book['book_html_path'] = f'books_html/{html_name}'
 
     books_per_page = 10
     pages = list(chunked(books, books_per_page))
@@ -40,7 +40,7 @@ def build_site(data_path, output_dir='docs'):
             books=books_on_page,
             current_page=page_number,
             total_pages=len(pages),
-            base_url="./"
+            base_url='./'
         )
         with open(f'{output_dir}/index{page_number}.html', 'w', encoding='utf-8') as f:
             f.write(rendered)
@@ -49,7 +49,7 @@ def build_site(data_path, output_dir='docs'):
         books=pages[0],
         current_page=1,
         total_pages=len(pages),
-        base_url="./"
+        base_url='./'
     )
     with open(f'{output_dir}/index.html', 'w', encoding='utf-8') as f:
         f.write(rendered_root)
@@ -59,7 +59,7 @@ def build_site(data_path, output_dir='docs'):
             text = rf.read()
         rendered = book_tpl.render(
             book={**book, 'text': text},
-            base_url="../"
+            base_url='../'
         )
         out_path = Path(output_dir) / book['book_html_path']
         out_path.parent.mkdir(parents=True, exist_ok=True)
